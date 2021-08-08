@@ -1,0 +1,39 @@
+{
+	"id": 3,
+	"toAddresses": [
+	  {
+		"name": "posttest1",
+		"address": "posttest1@gmail.com"
+	  },
+	  {
+		"name": "posttest2",
+		"address": "posttest2@gmail.com"
+	  }
+	],
+	"fromAddresses": [
+	  {
+		"name": "posttest3",
+		"address": "posttest3@hotmail.com"
+	  },
+	  {
+		"name": "posttest4",
+		"address": "posttest4@hotmail.com"
+	  }
+	],
+	"copyAddresses": [
+	  {
+		"name": "posttest5",
+		"address": "posttest5@hotmail.com"
+	  },
+	  {
+		"name": "posttest6",
+		"address": "posttest6@hotmail.com"
+	  }
+	],
+	"subject": "postposttest Email 1",
+	"body": "Hello word1",
+	"attachmentFilename": [
+	  "postfile1",
+	  "postfile2"
+	]
+}

@@ -1,0 +1,21 @@
+https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-5.0
+Windows Hosting Bundle
+https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.7-windows-hosting-bundle-installer
+To manually restart IIS, stop the Windows Process Activation Service (WAS) and then restart the World Wide Web Publishing Service (W3SVC).
+Execute the following commands in an elevated command shell:
+net stop was /y
+net start w3svc
+https://docs.microsoft.com/en-us/dotnet/core/deploying/#framework-dependent-executables-fde
+Self-contained Deployment vs framework-dependent-executables
+https://www.martinfowler.com/bliki/BlueGreenDeployment.html
+
+.net authentication and authorization
+https://www.youtube.com/watch?v=BWa7Mu-oMHk
+
+asp.net 5 active directory authentication
+https://www.youtube.com/watch?v=UqfSpx0E19Q
+
+deploy windows authentication asp.net 5 to iis
+https://www.youtube.com/watch?v=gWfpYAjBeOA
+
+https://tech.trailmax.info/2016/03/using-owin-and-active-directory-to-authenticate-users-in-asp-net-mvc-5-application/

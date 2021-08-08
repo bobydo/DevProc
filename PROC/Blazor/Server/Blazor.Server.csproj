@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+	  <!--
+	  https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.1&tabs=windows
+	  dotnet user-secrets init
+	  C:\Users\sbao\AppData\Roaming\Microsoft\UserSecrets\d14aae1e-f846-4134-b2a3-498697ae6046\secrets.json
+	  {
+	  }
+	  dotnet user-secrets set "EmailConfiguration:ServiceApiKey" "12345"
+	  C:\Users\sbao\AppData\Roaming\Microsoft\UserSecrets\d14aae1e-f846-4134-b2a3-498697ae6046\secrets.json
+		  "EmailConfiguration": {
+			"SmtpPassword": "SmtpPassword",
+			"ServiceApiKey": "12345"
+		  }
+	  -->
+    <UserSecretsId>d14aae1e-f846-4134-b2a3-498697ae6046</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="5.0.5" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Client\Blazor.Client.csproj" />
+    <ProjectReference Include="..\Shared\Blazor.Shared.csproj" />
+  </ItemGroup>
+
+
+</Project>

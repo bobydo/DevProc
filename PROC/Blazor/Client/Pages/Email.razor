@@ -1,0 +1,20 @@
+﻿@page "/email"
+@using Blazor.Shared.Model
+@inject HttpClient Http
+@if (email == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <h3>Email Page</h3>
+}
+
+@code {
+    private Email email;
+
+    protected override async Task OnInitializedAsync()
+    {
+        email = await Http.GetFromJsonAsync<Email>("Email");
+    }
+}
